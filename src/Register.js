@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import Todolist from './Todolist';
+
+
 
 function Register() {
     const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ function Register() {
     return (
         <div className="container" style={{ marginTop: "10vh" }}>
             <form >
-                <h2> Create your account</h2>
+                <h2 className='welcome'> Create your account</h2>
                 <p>Welcome </p>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email address :</label>
@@ -24,7 +25,7 @@ function Register() {
                     <label htmlFor="password" className="form-label">Password :</label>
                     <input onChange={e => { setPassword(e.target.value) }} type="password" className="form-control" id="password" />
                 </div>
-                <button onClick={handleLogin} >LOG IN</button>
+                <button className='loginreg' onClick={handleLogin} >LOG IN</button>
       <p style={{ marginTop: '2vh' }}>
   Have an account? <Link to="/login">Login</Link>
   

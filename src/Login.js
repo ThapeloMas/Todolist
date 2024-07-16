@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Todolist from './Todolist';
+
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -13,7 +13,7 @@ function Login() {
     return (
         <div className="container" style={{ marginTop: '20px' }}>
             <form>
-                <h2>Login to your account</h2>
+                <h2 className='welcome'>Login to your account</h2>
                 <p>Welcome back!</p>
                 <div>
                     <label htmlFor="email">Email address :</label>
@@ -33,7 +33,7 @@ function Login() {
                         value={password} 
                     />
                 </div>
-               <button onClick={handleLogin} >LOG IN</button>
+               <button className='loginreg' onClick={handleLogin} >LOG IN</button>
             </form>
         </div>
     );

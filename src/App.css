@@ -1,8 +1,94 @@
-.head{
-  margin-left: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playwrite+CU:wght@100..400&display=swap');
+
+
+
+.app {
+  text-align: center;
+  padding: 20px;
+  width: 700px;
+  background-color: rgb(228, 199, 199);
+  margin-left: 100px;
+  margin-top: 150px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px rgb(202, 118, 118);
 }
-.Navbar{
-  margin-left: 600px;
-  margin-bottom: 60px;
-  gap: 0.5rem
+
+.todo-form {
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  
+ 
+}
+
+.todo-item p {
+  margin: 0;
+}
+
+button {
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+  
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+     width: 70px;
+    border-radius: 4px;
+
+}
+
+
+button:hover {
+  background-color:rgb(202, 118, 118) ;
+  color: black;
+  }
+
+
+input,
+select {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+
+}
+
+body{
+  background-color: rgb(212, 221, 224);
+  font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+    font-variation-settings: 100px;
+     
+      
+
+} 
+.container{
+  margin-left: 300px;
+  background-color: rgb(132, 173, 201);
+  padding: 20px;
+  border-radius: 40px;
+  width: 400px;
+  height: 350px;
+ 
+ 
+  
+}
+.welcome{
+  color: rgba(224, 136, 3, 0.966);
+}
+.loginreg{
+  margin-top: 20px;
+  width: 100px;
 }
