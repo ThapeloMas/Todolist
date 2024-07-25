@@ -36,7 +36,7 @@ const TodoList = () => {
           setItemToEdit(null);
         });
     } else {
-      const newTodo = { id: Date.now(), taskName, description, priority };
+      const newTodo = { taskName, description, priority };
       fetch('http://localhost:5000/todos', {
         method: 'POST',
         headers: {
