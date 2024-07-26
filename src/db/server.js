@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Initialize SQLite database
-const db = new sqlite3.Database(':memory:');
+const db = new sqlite3.Database('./todos.db');
 
 db.serialize(() => {
   db.run("CREATE TABLE todos (id INTEGER PRIMARY KEY AUTOINCREMENT, taskName TEXT, description TEXT, priority TEXT)");
