@@ -13,7 +13,9 @@ app.use(cors());
 const db = new sqlite3.Database('./todos.db');
 
 db.serialize(() => {
-  db.run("CREATE TABLE todos (id INTEGER PRIMARY KEY AUTOINCREMENT, taskName TEXT, description TEXT, priority TEXT)");
+  db.run(
+    "CREATE TABLE IF NOT EXISTS todos (id INTEGER PRIMARY KEY AUTOINCREMENT, taskName TEXT, description TEXT, priority TEXT)"
+  );
 });
 
 // Route to handle root URL
